@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Area Of a Rectangle</title>
+<style>
+form {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 50px;
+}
+label {
+font-size: 20px;
+margin-bottom: 10px;
+}
+input[type="text"] {
+font-size: 18px;
+padding: 5px;
+border-radius: 5px;
+border: 1px solid #ccc;
+margin-bottom: 20px;
+}
+button {
+font-size: 20px;
+padding: 10px 20px;
+border-radius: 5px;
+background-color: #c41dd7;
+color: white;
+border: none;
+cursor: pointer;
+}
+</style>
+</head>
+<body>
+<form>
+<label for="length">Length:</label>
+<input type="text" id="length">
+<label for="width">Width:</label>
+<input type="text" id="width">
+<button onclick="area()">Calculate Area</button>
+</form>
+<script>
+function area() {
+let length = parseFloat(document.getElementById("length").value);
+let width = parseFloat(document.getElementById("width").value);
+let area = length * width;
+alert("The area of the rectangle is: " + area);
+}
+</script>
+</body>
+</html>
