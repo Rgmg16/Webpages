@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=#, initial-scale=1.0">
+    <title>Calculation of P&A</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        border: 5px solid black;
+        }
+
+        label {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            font-size: 18px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+        button {
+            font-size: 20px;
+            padding: 10px 20px;
+            border-radius: 50px;
+            background-color: #c41dd7;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button[onclick="perimeter()"] {
+            font-size: 20px;
+            padding: 10px 20px;
+            border-radius: 50px;
+            background-color: yellow;
+            color: black;
+            border: none;
+            cursor: pointer;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <label for="Length">Length:</label>
+        <input type="text" id="length">
+
+        <label for="Width">Width:</label>
+        <input type="text" id="width">
+
+        <button onclick="area()">Calculate Area</button>
+        <button onclick="perimeter()">Calculate Perimeter</button>
+    </form>
+    <script>
+        function area() {
+            let length = parseFloat(document.getElementById("length").value);
+            let width = parseFloat(document.getElementById("width").value);
+            let area = length * width;
+            alert("The area of the rectangle is: " + area);
+        }
+
+        function perimeter() {
+            let length = parseFloat(document.getElementById("length").value);
+            let width = parseFloat(document.getElementById("width").value);
+            let perimeter = 2 * (length + width);
+            alert("The perimeter of the rectangle is: " + perimeter);
+        } 
+    </script>
+</body>
+
+</html>
