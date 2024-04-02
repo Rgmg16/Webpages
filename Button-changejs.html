@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic button :D</title>
+    <style>
+        div {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mydiv">
+        <h1>Welcome to the website!</h1>
+        <p>Tap the button below to see the magic!</p>
+    </div>
+    <button onclick="changebackground()">Magic button</button>
+    <script>
+        function changebackground() {
+            let testDiv = document.getElementById("mydiv")
+            testDiv.style.backgroundColor = "yellow"
+        }
+    </script>
+</body>
+
+</html>
