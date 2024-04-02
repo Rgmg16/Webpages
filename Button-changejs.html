@@ -9,19 +9,40 @@
         div {
             background-color: green;
         }
+        h1{
+            color:blanchedalmond
+        
+        }
+        p{
+            font-size: 40px;
+        }
     </style>
 </head>
 
 <body>
     <div id="mydiv">
-        <h1>Welcome to the website!</h1>
-        <p>Tap the button below to see the magic!</p>
+        <h1 id="h1">Welcome to the website!</h1>
+        <p id="p">Tap the button below to see the magic!</p>
     </div>
     <button onclick="changebackground()">Magic button</button>
     <script>
         function changebackground() {
             let testDiv = document.getElementById("mydiv")
             testDiv.style.backgroundColor = "yellow"
+        }
+    </script>
+    <button onclick="changeh1colour()">Magic button 2</button>
+    <script>
+        function changeh1colour(){
+            let btn= document.getElementById("h1")
+            btn.style.color ="pink"
+        }
+    </script>
+    <button onclick="changefontsize()">Magic button 3</button>
+    <script>
+        function changefontsize(){
+            let fnt= document.getElementById("p")
+            fnt.style.fontSize ="60px"
         }
     </script>
 </body>
