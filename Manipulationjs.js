@@ -9,5 +9,5 @@ const itemTag = document.getElementsByTagName("h3")[0];
 redColor.addEventListener("click", function () {
     cartButton.style.backgroundColor = "red";
     itemTag.style.backgroundColor = "red";
-    imageCard.style.backgroundImage = 'url("./img/red-benz.webp")';
+    imageCard.style.backgroundImage = 'url("./Red benz.jpg")';
   });
